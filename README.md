@@ -70,6 +70,12 @@ tsconfig.json
 - Дозволяє створювати сімейства пов'язаних об'єктів
 - Забезпечує можливість легко додавати нові провайдери
 
+### Залежності
+Перейдіть в коріневу папку та встановіть залежності проєкту:
+```
+npm install
+```
+
 ## Запуск проекту
 
 ```bash
@@ -88,3 +94,11 @@ npx ts-node src/main.ts apple
 1. Створює відповідну фабрику провайдера
 2. Ініціалізує контекст платежів
 3. Виконує повний цикл операцій (authorize, capture, refund)
+
+### Приклад виконання:
+
+```
+[PayPal] Authorizing $100
+[PayPal] Capturing transaction mcw6pqtf5xgnqtpqow3
+[PayPal] Refunding transaction mcw6pqtf5xgnqtpqow3
+```
